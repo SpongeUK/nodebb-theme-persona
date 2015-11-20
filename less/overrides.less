@@ -6,6 +6,7 @@
 @success: #5cb85c;
 @warning: #f0ad4e;
 @dark: #666;
+@danger: #d9534f;
 
 .header {
   background-color: @sushi;
@@ -64,6 +65,7 @@
   -moz-border-radius: 3px;
   &.btn-primary, &.btn-info {
     border: 1px solid @sushi;
+    border-color: @sushi;
     background-color: @sushi;
     &:hover {
       background-color: @white;
@@ -72,6 +74,7 @@
   }
   &.btn-success {
     border: 1px solid @success;
+    border-color: @success;
     background-color: @success;
     &:hover {
       background-color: @white;
@@ -80,10 +83,20 @@
   }
   &.btn-warning {
     border: 1px solid @warning;
+    border-color: @warning;
     background-color: @warning;
     &:hover {
       background-color: @white;
       color: @warning;
+    }
+  }
+  &.btn-danger {
+    border: 1px solid @danger;
+    border-color: @danger;
+    background-color: @danger;
+    &:hover {
+      background-color: @white;
+      color: @danger;
     }
   }
 }
