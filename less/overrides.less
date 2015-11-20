@@ -1,0 +1,89 @@
+@sushi: #7bad37;
+@misery: #e1e1e1;
+@paleslate: #B9B8B8;
+@white: #FFF;
+@sugarcane: #f3fff0;
+@success: #5cb85c;
+@warning: #f0ad4e;
+@dark: #666;
+
+.header {
+  background-color: @sushi;
+
+  i {
+    color: @sugarcane;
+  }
+
+  .navbar-nav {
+    .dropdown-menu {
+      li {
+        a {
+          color: @dark;
+        }
+      }
+    }
+
+    li {
+      font-size: 16px;
+      a {
+        color: @sugarcane;
+      }
+      &.active {
+        background-color: @sushi;
+        a {
+          background-color: @sushi;
+          &:focus {
+            background-color: @sushi;
+          }
+          i {
+            color: @dark;
+            background-color: @sushi;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tag-list {
+  display: none;
+}
+
+.posts, .post-bar {
+  .tags {
+    display: none;
+  }
+  .group-label {
+    display: none;
+  }
+}
+
+.btn {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  &.btn-primary, &.btn-info {
+    border: 1px solid @sushi;
+    background-color: @sushi;
+    &:hover {
+      background-color: @white;
+      color: @sushi;
+    }
+  }
+  &.btn-success {
+    border: 1px solid @success;
+    background-color: @success;
+    &:hover {
+      background-color: @white;
+      color: @success;
+    }
+  }
+  &.btn-warning {
+    border: 1px solid @warning;
+    background-color: @warning;
+    &:hover {
+      background-color: @white;
+      color: @warning;
+    }
+  }
+}
