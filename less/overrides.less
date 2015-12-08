@@ -8,13 +8,26 @@
 @dark: #666;
 @danger: #d9534f;
 
+::selection {
+  background: @sushi;
+}
+::-moz-selection {
+  background: @sushi;
+}
+
 h2 {
   a {
     color: #555 !important;
   }
 }
 
+html.composing .composer .mobile-navbar {
+  background: @sushi !important;
+}
 
+#new_topic {
+  display: none;
+}
 
 .header {
   background-color: @sushi;
