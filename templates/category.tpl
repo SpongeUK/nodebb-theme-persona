@@ -7,6 +7,7 @@
 	<div class="clearfix">
 		<!-- IF privileges.topics:create -->
 		<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+		<span class="new-topic-warning"><i class="fa fa-info-circle"></i>&nbsp;Your facilitator will be notified of new topics.</span>
 		<!-- ELSE -->
 			<!-- IF !loggedIn -->
 			<a href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
